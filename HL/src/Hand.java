@@ -52,14 +52,14 @@ public class Hand extends Deck{
     }
     
    
-    public void sortBySuit() {
-        Collections.sort(cardsList, new CSCompare());
-    }
+//    public void sortBySuit() {
+//        Collections.sort(cardsList, new CSCompare());
+//    }
     public int getMaxSize(){
         return maxSize;
     }
     
-    public void sortByValue() {
-        Collections.sort(cardsList, new CVCompare());
-    }
+//    public void sortByValue() {
+//        Collections.sort(cardsList, new CVCompare());
+//    }
 }
