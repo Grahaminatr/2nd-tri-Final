@@ -38,7 +38,7 @@ public class FiveCardStud {
             	JOptionPane.showMessageDialog(frame,"PAIR(S):" + players[i].countPair()+ "! ");
             if(players[i].isFlush())
             	JOptionPane.showMessageDialog(frame,"FLUSH!!");
-            
+              
 
         }
     }

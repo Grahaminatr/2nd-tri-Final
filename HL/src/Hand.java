@@ -20,7 +20,7 @@ public class Hand extends Deck{
     public void clear() {
         cardsList.clear();
     }
-   \
+     
     
     public void removeCard(Card c) {
         

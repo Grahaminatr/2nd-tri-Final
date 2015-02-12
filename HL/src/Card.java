@@ -11,7 +11,7 @@ public class Card {
     public final static int QUEEN = 12;
     public final static int KING = 13;
     
-    
+      
     private final int suit;
     
     

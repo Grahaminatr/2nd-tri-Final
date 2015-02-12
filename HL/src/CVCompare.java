@@ -1,7 +1,7 @@
 
 
 	import java.util.Comparator;
-
+  
 	
 	public class CVCompare implements Comparator<Card>{
 

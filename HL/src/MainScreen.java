@@ -8,7 +8,7 @@ public class MainScreen extends JFrame
 	private static final long serialVersionUID = 1L;
 	static String name; 
 	static int className;
-	
+	  
 	static JFrame frame = new JFrame();
 
 	public static void main(String[] args)

@@ -1,24 +1,24 @@
 public class Player {
-    public final static int MAX_CARD = 5;
+    public final static int maxCard = 5;
     private Card cards[];
    
     public Player() {
-        cards = new Card[MAX_CARD];
+        cards = new Card[maxCard];
     }
     
     public Card[] getCards() {
         return cards;
     }
-    
+      
     public Card getCard(int index) {
-        if (index >= 0 && index < MAX_CARD)
+        if (index >= 0 && index < maxCard)
             return cards[index];
         else
             return null;
     }
    
     public void setCard(Card c, int index) {
-        if(index >= 0 && index < MAX_CARD)
+        if(index >= 0 && index < maxCard)
             cards[index] = c;
     }
     
