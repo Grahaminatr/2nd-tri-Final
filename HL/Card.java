@@ -6,7 +6,7 @@ public class Card {
     public final static int CLUBS = 3;
     
     
-    public final static int ACE = 14;
+    public final static int ACE = 1;
     public final static int JACK = 11;
     public final static int QUEEN = 12;
     public final static int KING = 13;
@@ -19,6 +19,11 @@ public class Card {
     
     
     public Card(int theValue, int theSuit) {
+        if(theSuit != SPADES && theSuit != HEARTS && theSuit != DIAMONDS && 
+                theSuit != CLUBS )
+            throw new IllegalArgumentException("Illegal playing card suit");
+        if(theValue <1 || theValue >13) 
+            throw new IllegalArgumentException("Illegal playing card value");
         
         value = theValue;
         suit = theSuit;

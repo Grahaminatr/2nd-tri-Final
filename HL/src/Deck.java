@@ -31,7 +31,9 @@ public class Deck {
         return deckOfCards.size();
     }
     
-    
+    public Card getCard(int position) {
+        return deckOfCards.get(position);
+}
     public boolean isEmpty() {
         return deckOfCards.isEmpty();
     }

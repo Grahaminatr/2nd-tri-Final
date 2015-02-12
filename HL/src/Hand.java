@@ -3,13 +3,18 @@ import java.util.Collections;
 import java.util.List;
 
 
-public class Hand {
+public class Hand extends Deck{
 
-    final private List<Card> cardsList = new ArrayList<Card>();
+     private static List<Card> cardsList = new ArrayList<Card>();
     
     
-    public Hand() {
-    }
+    private int maxSize; 
+
+	public Hand(int maxSize)
+	{
+		cardsList = new ArrayList<Card>();
+        this.maxSize = maxSize;
+	}
     
     
     public void clear() {
@@ -18,20 +23,16 @@ public class Hand {
 
     
     public void removeCard(Card c) {
-        if ((null==c)&&(!(c instanceof  Card))) {
-            System.out.println("Error: No card to be removed!");
-        } else {
+        
             cardsList.remove(c);
-        }
+        
     }
     
    
     public void addCard(Card c) {
-        if((null==c)&&(!(c instanceof  Card))) {
-            System.out.println("Error: No card to be removed!");
-        } else {
+        
             cardsList.add(c);
-        }
+        
         
     }
     
@@ -41,7 +42,7 @@ public class Hand {
     }
     
     
-    public int getCardCount() {
+    public static int getCardCount() {
         return cardsList.size();
     }
     
@@ -54,7 +55,9 @@ public class Hand {
     public void sortBySuit() {
         Collections.sort(cardsList, new CSCompare());
     }
-    
+    public int getMaxSize(){
+        return maxSize;
+    }
     
     public void sortByValue() {
         Collections.sort(cardsList, new CVCompare());
