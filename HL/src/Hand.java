@@ -6,7 +6,7 @@ import java.util.List;
 public class Hand extends Deck{
 
      private static List<Card> cardsList = new ArrayList<Card>();
-    
+    private Card card;
     
     private int maxSize; 
 
@@ -20,7 +20,7 @@ public class Hand extends Deck{
     public void clear() {
         cardsList.clear();
     }
-
+   \
     
     public void removeCard(Card c) {
         
